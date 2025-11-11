@@ -1,0 +1,45 @@
+﻿Hollen Graver
+Email: graverhollen@gmail.com
+LinkedIn: linkedin.com/in/hollen-graver-92189941 | Website: hollengraver.com | Github: github.com/mrhollen
+________________
+
+
+Summary
+Highly experienced software developer with a decade of expertise in building impactful software tools across Java/Angular/AWS/C#. Passionate about science, teaching, outdoor activities, fitness, and AI/machine learning. Seeking a fulfilling career to leverage my skills and contribute to innovative projects.
+________________
+
+
+Campspot
+Senior Developer Level 2 | March 2024 – Present
+* Lead development and improvement of key product features, ensuring cutting-edge functionality and superior user experience.
+* Conducted comprehensive code reviews and provided guidance to junior developers, enhancing team performance and skill growth
+* Developed applications using Java, Kotlin, AngularJS, Angular 2+.
+* Utilized PostgreSQL, MySQL, Elasticsearch, OpenSearch, Redis for search and advanced database management to optimize application performance and data handling
+Senior Developer Level 1 | April 2022 – March 2024
+* Designed and deployed a new gift card system that was adopted by hundreds of clients, significantly boosting customer engagement and revenue streams
+* Developed and integrated new features that significantly improved the user experience, increasing user satisfaction and retention rates.
+Developer Level 2 | July 2019 – April 2022
+* Assisted in software development and maintenance.
+* Contributed to feature rollouts, improving functionality.
+* Worked with Java, Kotlin, AngularJS, Angular 2+, PostgreSQL, MySQL, Elasticsearch, OpenSearch, Redis.
+PRSM Healthcare
+Software Engineer | June 2014 – May 2019
+* Developed and maintained applications, collaborated with cross-functional teams.
+* Supported 2x client growth, facilitated data delivery to stakeholders.
+* Engineered a fault-tolerant system using redundant VPN connections and load balancing.
+* Worked extensively with C#, .NET, .NET Core.
+________________
+
+
+Education
+B.Sc. in Computer Information Science: Information Systems
+Mansfield University of Pennsylvania
+Graduated: 2014
+________________
+
+
+Skills
+Technical:
+Java, Kotlin, JavaScript, Go, Python, C#, AngularJS, Angular 2+, Flutter, Dropwizard, Quarkus, ASP.NET, .NET, .NET Core, Entity Framework, PostgreSQL, MySQL, SQLite, Elasticsearch, OpenSearch, Redis, Docker, Kubernetes, API Development, Software Testing, Debugging, Code Reviews, Fault-Tolerant System Design, Redundant VPN Connections, Load Balancing, Valkey,, Message Queues, AI/ML (LLMs, LLM Agents, MCP, Diffusion Based Image Generators).
+Soft Skills:
+Communication, Team Collaboration, Problem-Solving, Mentorship, Adaptability, Attention to Detail, Teaching, Project Management.
