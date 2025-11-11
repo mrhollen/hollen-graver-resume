@@ -16,18 +16,39 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-theme="light">
     <header class="hero" id="contact">
       <div class="content">
         <div class="hero-top">
           <p class="eyebrow">Software Developer · Mentor · Problem Solver</p>
-          <nav class="site-nav compact">
-            <a href="#summary">Summary</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-          </nav>
+          <div class="hero-top-actions">
+            <nav class="site-nav compact">
+              <a href="#summary">Summary</a>
+              <a href="#experience">Experience</a>
+              <a href="#skills">Skills</a>
+              <a href="#education">Education</a>
+              <a href="#contact">Contact</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color mode">
+              <span class="toggle-track">
+                <span class="toggle-thumb"></span>
+                <span class="toggle-icon sun" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path
+                      d="M12 7.25A4.75 4.75 0 1 0 16.75 12 4.75 4.75 0 0 0 12 7.25Zm0-5a1 1 0 0 1 1 1V6a1 1 0 0 1-2 0V3.25a1 1 0 0 1 1-1Zm0 15.75a1 1 0 0 1 1 1V21a1 1 0 0 1-2 0v-1.75a1 1 0 0 1 1-1ZM3.25 11a1 1 0 0 1 1-1H6a1 1 0 0 1 0 2H4.25a1 1 0 0 1-1-1Zm14 0a1 1 0 0 1 1-1H21a1 1 0 0 1 0 2h-2.75a1 1 0 0 1-1-1ZM5.4 4.4a1 1 0 0 1 1.42 0L8 5.58a1 1 0 0 1-1.42 1.42L5.4 5.82A1 1 0 0 1 5.4 4.4Zm10.02 10.02a1 1 0 0 1 1.42 0l1.18 1.18a1 1 0 1 1-1.42 1.42l-1.18-1.18a1 1 0 0 1 0-1.42ZM5.4 17.18a1 1 0 0 1 0-1.42L6.58 14.6a1 1 0 1 1 1.42 1.42L6.82 17.18a1 1 0 0 1-1.42 0Zm10.02-10.02a1 1 0 0 1 0-1.42L16.6 4.4a1 1 0 1 1 1.42 1.42l-1.18 1.18a1 1 0 0 1-1.42 0Z"
+                    />
+                  </svg>
+                </span>
+                <span class="toggle-icon moon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path
+                      d="M20.5 14.44a8.5 8.5 0 0 1-10.94-10.9 1 1 0 0 0-1.48-1.12A10.5 10.5 0 1 0 21.54 16a1 1 0 0 0-1.04-1.56Z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
         </div>
         <h1>Hollen Graver</h1>
         <p class="lede">
