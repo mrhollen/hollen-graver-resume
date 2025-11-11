@@ -176,6 +176,18 @@ p {
   box-shadow: 4px 4px 10px var(--shadow-dark), -4px -4px 10px var(--shadow-light);
 }
 
+body[data-theme="dark"] .btn {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6), -3px -3px 8px rgba(38, 45, 68, 0.4);
+}
+
+body[data-theme="dark"] .btn.primary {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6), -3px -3px 8px rgba(79, 210, 165, 0.25);
+}
+
+body[data-theme="dark"] .btn:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.55), -2px -2px 6px rgba(38, 45, 68, 0.35);
+}
+
 .meta,
 .links {
   list-style: none;
@@ -220,6 +232,11 @@ p {
     4px 4px 10px var(--shadow-dark), -4px -4px 10px var(--shadow-light);
 }
 
+body[data-theme="dark"] .links.social a {
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.25),
+    5px 5px 12px rgba(0, 0, 0, 0.6), -4px -4px 10px rgba(38, 45, 68, 0.4);
+}
+
 .links.social svg {
   width: 22px;
   height: 22px;
@@ -248,6 +265,11 @@ p {
     6px 6px 14px var(--shadow-dark), -6px -6px 14px var(--shadow-light);
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.35s ease;
+}
+
+body[data-theme="dark"] .theme-toggle {
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35),
+    5px 5px 12px rgba(0, 0, 0, 0.6), -4px -4px 10px rgba(38, 45, 68, 0.4);
 }
 
 .theme-toggle:focus-visible {
@@ -317,6 +339,11 @@ body[data-theme="light"] .toggle-icon.moon svg {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+body[data-theme="dark"] .site-nav {
+  border-top-color: rgba(255, 255, 255, 0.08);
+  border-bottom-color: rgba(255, 255, 255, 0.04);
+}
+
 .site-nav.compact {
   margin-top: 0;
   padding: 0;
@@ -326,6 +353,7 @@ body[data-theme="light"] .toggle-icon.moon svg {
 }
 
 .site-nav a {
+  --nav-border-active: rgba(108, 99, 255, 0.35);
   text-decoration: none;
   font-weight: 600;
   color: var(--text);
@@ -336,9 +364,13 @@ body[data-theme="light"] .toggle-icon.moon svg {
   transition: color 0.16s ease, border 0.16s ease, opacity 0.16s ease;
 }
 
+body[data-theme="dark"] .site-nav a {
+  --nav-border-active: rgba(127, 232, 196, 0.35);
+}
+
 .site-nav a:hover {
   color: var(--accent-strong);
-  border-bottom-color: rgba(108, 99, 255, 0.4);
+  border-bottom-color: var(--nav-border-active);
   opacity: 1;
 }
 
@@ -355,6 +387,18 @@ section {
   box-shadow: 14px 14px 30px var(--shadow-dark), -12px -12px 26px var(--shadow-light);
   border: 1px solid rgba(255, 255, 255, 0.4);
   transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+body[data-theme="dark"] .content,
+body[data-theme="dark"] section,
+body[data-theme="dark"] #skills .skill-grid div {
+  box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.65), -8px -8px 18px rgba(38, 45, 68, 0.35);
+}
+
+body[data-theme="dark"] section,
+body[data-theme="dark"] .content,
+body[data-theme="dark"] #skills .skill-grid div {
+  border-color: transparent;
 }
 
 .section-heading {
