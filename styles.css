@@ -324,16 +324,6 @@ body[data-theme="light"] .toggle-icon.moon svg {
   margin-top: -0.5rem;
 }
 
-.nav-panel-inner {
-  width: min(1100px, 100%);
-  margin: 0 auto;
-  background: var(--bg-soft);
-  border-radius: calc(var(--radius) + 4px);
-  padding: 1.1rem 2rem;
-  box-shadow: 12px 12px 26px var(--shadow-dark), -10px -10px 22px var(--shadow-light);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-}
-
 .site-nav {
   display: flex;
   flex-wrap: wrap;
@@ -384,15 +374,13 @@ section {
 
 body[data-theme="dark"] .content,
 body[data-theme="dark"] section,
-body[data-theme="dark"] #skills .skill-grid div,
-body[data-theme="dark"] .nav-panel-inner {
+body[data-theme="dark"] #skills .skill-grid div {
   box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.65), -8px -8px 18px rgba(38, 45, 68, 0.35);
 }
 
 body[data-theme="dark"] section,
 body[data-theme="dark"] .content,
-body[data-theme="dark"] #skills .skill-grid div,
-body[data-theme="dark"] .nav-panel-inner {
+body[data-theme="dark"] #skills .skill-grid div {
   border-color: transparent;
 }
 
