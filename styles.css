@@ -189,8 +189,8 @@ strong {
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: linear-gradient(135deg, var(--color-primary), #0284c7);
-  color: #ffffff;
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
   font-size: 0.75rem;
   font-weight: 800;
   border-radius: 8px;
@@ -304,18 +304,7 @@ html[data-theme="dark"] .toggle-icon.moon {
   box-shadow: var(--shadow-card);
   margin-bottom: 2rem;
   position: relative;
-  overflow: hidden;
   transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--color-primary), #0284c7, var(--color-accent));
 }
 
 .hero-header-bar {
@@ -1085,10 +1074,6 @@ a.contact-chip:hover {
     background: transparent !important;
     padding: 0 !important;
     margin-bottom: 12pt !important;
-  }
-
-  .hero-card::before {
-    display: none;
   }
 
   .hero-title {
