@@ -3,265 +3,501 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hollen Graver | Software Developer</title>
+    <title>Hollen Graver | Senior Software Developer &amp; Tech Lead</title>
     <meta
       name="description"
-      content="Portfolio site for Hollen Graver, a software developer with experience across Java, Kotlin, Angular, and cloud-native systems."
+      content="Senior Software Developer & Tech Lead with 10+ years scaling distributed systems, cloud platforms, and developer tooling across Java, TypeScript, Go, C#, and Agentic AI."
     />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f766e'/><text x='50' y='64' font-family='sans-serif' font-size='48' font-weight='700' fill='white' text-anchor='middle'>HG</text></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        try {
+          const stored = localStorage.getItem("hgr-theme");
+          const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = stored || (prefersDark ? "dark" : "light");
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {}
+      })();
+    </script>
   </head>
-  <body data-theme="light">
-    <header class="hero" id="contact">
-      <div class="content">
-        <div class="hero-top">
-          <p class="eyebrow">Software Developer · Mentor · Problem Solver</p>
-          <div class="hero-top-actions">
-            <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color mode">
-              <span class="toggle-track">
-                <span class="toggle-thumb"></span>
-                <span class="toggle-icon sun" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" role="img">
-                    <path
-                      d="M12 7.25A4.75 4.75 0 1 0 16.75 12 4.75 4.75 0 0 0 12 7.25Zm0-5a1 1 0 0 1 1 1V6a1 1 0 0 1-2 0V3.25a1 1 0 0 1 1-1Zm0 15.75a1 1 0 0 1 1 1V21a1 1 0 0 1-2 0v-1.75a1 1 0 0 1 1-1ZM3.25 11a1 1 0 0 1 1-1H6a1 1 0 0 1 0 2H4.25a1 1 0 0 1-1-1Zm14 0a1 1 0 0 1 1-1H21a1 1 0 0 1 0 2h-2.75a1 1 0 0 1-1-1ZM5.4 4.4a1 1 0 0 1 1.42 0L8 5.58a1 1 0 0 1-1.42 1.42L5.4 5.82A1 1 0 0 1 5.4 4.4Zm10.02 10.02a1 1 0 0 1 1.42 0l1.18 1.18a1 1 0 1 1-1.42 1.42l-1.18-1.18a1 1 0 0 1 0-1.42ZM5.4 17.18a1 1 0 0 1 0-1.42L6.58 14.6a1 1 0 1 1 1.42 1.42L6.82 17.18a1 1 0 0 1-1.42 0Zm10.02-10.02a1 1 0 0 1 0-1.42L16.6 4.4a1 1 0 1 1 1.42 1.42l-1.18 1.18a1 1 0 0 1-1.42 0Z"
-                    />
-                  </svg>
-                </span>
-                <span class="toggle-icon moon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" role="img">
-                    <path
-                      d="M20.5 14.44a8.5 8.5 0 0 1-10.94-10.9 1 1 0 0 0-1.48-1.12A10.5 10.5 0 1 0 21.54 16a1 1 0 0 0-1.04-1.56Z"
-                    />
-                  </svg>
-                </span>
-              </span>
-            </button>
-          </div>
-        </div>
-        <h1>Hollen Graver</h1>
-        <p class="lede">
-          I build resilient software that powers real businesses. 
-          From the JVM, C#, and Go services 
-          to Angular front-ends, I focus on clean architecture,
-          measurable impact, and empowering teams through mentorship.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="mailto:graverhollen@gmail.com">Get in touch</a>
-          <a class="btn ghost" href="Hollen_Graver_Resume_2025.txt" download>Download resume</a>
-          <a class="btn ghost icon-btn" href="https://www.linkedin.com/in/hollen-graver-92189941" target="_blank" rel="noreferrer">
-            <span class="btn-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img">
-                <path
-                  d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5ZM3 9h4v12H3zM9 9h3.8v1.71h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6v6.34h-4V15.7c0-1.36-.02-3.12-1.9-3.12-1.9 0-2.19 1.49-2.19 3v5.42H9z"
-                />
-              </svg>
-            </span>
-          </a>
-          <a class="btn ghost icon-btn" href="https://github.com/mrhollen" target="_blank" rel="noreferrer">
-            <span class="btn-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img">
-                <path
-                  d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.74 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.2-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.75.8 1.2 1.83 1.2 3.09 0 4.44-2.69 5.41-5.25 5.69.42.36.79 1.07.79 2.17 0 1.57-.02 2.83-.02 3.22 0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-        <ul class="meta">
-          <li><span>Location</span>Denver, CO · Remote</li>
-          <li><span>Email</span><a href="mailto:graverhollen@gmail.com">graverhollen@gmail.com</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <section class="nav-panel">
-      <div class="nav-panel-inner">
-        <nav class="site-nav primary">
+  <body>
+    <!-- Top Floating Navigation -->
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="#top" class="brand-link" aria-label="Hollen Graver Home">
+          <span class="brand-avatar">HG</span>
+          <span class="brand-name">Hollen Graver</span>
+        </a>
+        <nav class="nav-links" aria-label="Main Navigation">
           <a href="#summary">Summary</a>
           <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
         </nav>
-      </div>
-    </section>
-
-    <main>
-      <section id="summary">
-        <div class="section-heading">
-          <p class="eyebrow">Summary</p>
-          <h2>What I bring</h2>
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle light and dark color mode" aria-pressed="false">
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+              <span class="toggle-icon sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <path fill="currentColor" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+                </svg>
+              </span>
+              <span class="toggle-icon moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16">
+                  <path fill="currentColor" d="M12.3 2a10 10 0 00-1.9 19.8 10 10 0 0010.5-12.8A7.8 7.8 0 0112.3 2z"/>
+                </svg>
+              </span>
+            </span>
+          </button>
         </div>
-        <p class="lede">
-          A decade of experience shipping production software and leading high-impact
-          initiatives. I specialize in bridging robust backend services with
-          intuitive user interfaces, with a focus on scalable platforms, developer
-          enablement, and agentic AI workflows. Outside of work, I'm a technical
-          tinkerer and mentor, exploring the frontiers of local LLMs and emerging
-          AI tools.
-        </p>
+      </div>
+    </header>
+
+    <div class="page-wrapper" id="top">
+      <!-- Hero Section -->
+      <section class="hero-card">
+        <div class="hero-header-bar">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Senior Software Developer &bull; Tech Lead &bull; Distributed Systems</span>
+          </div>
+        </div>
+
+        <div class="hero-body">
+          <h1 class="hero-title">Hollen Graver</h1>
+          <p class="hero-lede">
+            Senior Software Developer and Tech Lead with over a decade of experience designing and scaling distributed systems, cloud platforms, and developer tooling across Java, TypeScript, Go, and C#. Proven record leading high-impact initiatives from multi-service transaction workflows and fraud mitigation to full-stack cloud migrations. Passionate about software architecture, engineering mentorship, and agentic AI systems.
+          </p>
+
+          <div class="hero-actions-group">
+            <div class="hero-primary-btns">
+              <a class="btn btn-primary" href="mailto:graverhollen@gmail.com">
+                <svg class="btn-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                <span>Get in touch</span>
+              </a>
+              <a class="btn btn-secondary" href="Hollen_Graver_Resume.pdf" download="Hollen_Graver_Resume.pdf">
+                <svg class="btn-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                </svg>
+                <span>Download resume (PDF)</span>
+              </a>
+            </div>
+
+            <div class="hero-social-links">
+              <a class="social-btn" href="https://linkedin.com/in/hollen-graver-92189941" target="_blank" rel="noreferrer" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.95 0-1.72-.77-1.72-1.72s.77-1.72 1.72-1.72 1.72.77 1.72 1.72-.77 1.72-1.72 1.72m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+                </svg>
+              </a>
+              <a class="social-btn" href="https://github.com/mrhollen" target="_blank" rel="noreferrer" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.74 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.2-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.75.8 1.2 1.83 1.2 3.09 0 4.44-2.69 5.41-5.25 5.69.42.36.79 1.07.79 2.17 0 1.57-.02 2.83-.02 3.22 0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-contact-chips">
+            <div class="contact-chip">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              <span>Denver, CO &bull; Remote</span>
+            </div>
+            <a class="contact-chip" href="tel:+18143266160">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              <span>(814) 326-6160</span>
+            </a>
+            <a class="contact-chip" href="mailto:graverhollen@gmail.com">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <span>graverhollen@gmail.com</span>
+            </a>
+          </div>
+        </div>
       </section>
 
-      <section id="experience">
-        <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>Impactful roles</h2>
-        </div>
-        <article>
-          <header>
-            <div>
-              <h3>
-                Campspot · Senior Developer Level 2
-                <span class="tag">Java · Kotlin · Angular</span>
-              </h3>
-              <p>Mar 2024 – Present</p>
+      <!-- Main Content Container -->
+      <main class="content-flow">
+        <!-- Summary Section -->
+        <section class="card-section" id="summary">
+          <div class="section-title-wrap">
+            <p class="section-eyebrow">Overview</p>
+            <h2 class="section-title">Summary</h2>
+          </div>
+          <p class="lead-text">
+            Senior Software Developer and Tech Lead with over a decade of experience designing and scaling distributed systems, cloud platforms, and developer tooling across Java, TypeScript, Go, and C#. Proven record leading high-impact initiatives from multi-service transaction workflows and fraud mitigation to full-stack cloud migrations. Passionate about software architecture, engineering mentorship, and agentic AI systems.
+          </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="card-section" id="experience">
+          <div class="section-title-wrap">
+            <p class="section-eyebrow">Career History</p>
+            <h2 class="section-title">Experience</h2>
+          </div>
+
+          <!-- Campspot Experience Group -->
+          <div class="company-block">
+            <div class="company-header">
+              <div class="company-info">
+                <h3 class="company-name">Campspot</h3>
+                <span class="company-badge">Hospitality &bull; SaaS &bull; High Scale</span>
+              </div>
+              <span class="company-tenure">March 2019 &ndash; Present</span>
             </div>
-          </header>
-            <ul>
+
+            <div class="roles-timeline">
+              <!-- Role 1: Senior Dev Level 2 -->
+              <article class="role-entry">
+                <div class="role-marker" aria-hidden="true"></div>
+                <div class="role-header">
+                  <div class="role-titles">
+                    <h4 class="role-title">Senior Software Developer Level 2</h4>
+                    <span class="role-dates">Mar 2024 &ndash; Present</span>
+                  </div>
+                  <div class="role-tags">
+                    <span class="tag tag-accent">Tech Lead</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Kotlin</span>
+                    <span class="tag">Distributed Systems</span>
+                    <span class="tag">Flutter</span>
+                    <span class="tag">AWS</span>
+                  </div>
+                </div>
+                <ul class="role-bullets">
+                  <li>
+                    Served as <strong>Tech Lead</strong> for the architecture and delivery of an <strong>'Abandoned Cart' recovery platform</strong>, orchestrating event-driven cross-domain workflows across distributed services to automate customer re-engagement—recovering <strong>tens of thousands of dollars in cart value in the first month alone</strong>.
+                  </li>
+                  <li>
+                    Engineered <strong>automated fraud mitigation defenses</strong> that eliminated distributed carding attacks, safeguarding payment gateways and protecting revenue across <strong>tens of thousands of daily booking sessions</strong>.
+                  </li>
+                  <li>
+                    Hired, onboarded, and mentored junior and mid-level developers through system architecture guidance and code reviews, directly elevating engineering velocity and facilitating promotions to senior levels.
+                  </li>
+                  <li>
+                    Developed and maintained Campspot's customer-facing mobile application using <strong>Flutter (iOS &amp; Android)</strong>, supporting tens of thousands of monthly active users with campsite search, booking, and reservation management.
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Role 2: Senior Dev Level 1 -->
+              <article class="role-entry">
+                <div class="role-marker" aria-hidden="true"></div>
+                <div class="role-header">
+                  <div class="role-titles">
+                    <h4 class="role-title">Senior Software Developer Level 1</h4>
+                    <span class="role-dates">Apr 2022 &ndash; Mar 2024</span>
+                  </div>
+                  <div class="role-tags">
+                    <span class="tag">Gift Cards</span>
+                    <span class="tag">Payments ($2M&ndash;$5M/day)</span>
+                    <span class="tag">POS &amp; Invoicing</span>
+                    <span class="tag">Angular</span>
+                  </div>
+                </div>
+                <ul class="role-bullets">
+                  <li>
+                    Architected and launched an <strong>enterprise gift card platform</strong> adopted across hundreds of campground clients, establishing a new recurring revenue channel and expanding consumer booking flexibility.
+                  </li>
+                  <li>
+                    Hardened and optimized mission-critical checkout and payment processing pipelines, processing <strong>$2M&ndash;$5M in daily transactions</strong> with high availability.
+                  </li>
+                  <li>
+                    Engineered in-house <strong>Point of Sale (POS) and invoicing systems</strong> essential to daily on-premise operations across partner parks.
+                  </li>
+                  <li>
+                    Spearheaded UX and checkout improvements that reduced purchase friction, contributing to a measurable increase in <strong>Net Promoter Score (NPS)</strong> and customer retention.
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Role 3: Software Dev Level 2 -->
+              <article class="role-entry">
+                <div class="role-marker" aria-hidden="true"></div>
+                <div class="role-header">
+                  <div class="role-titles">
+                    <h4 class="role-title">Software Developer Level 2</h4>
+                    <span class="role-dates">Jul 2019 &ndash; Apr 2022</span>
+                  </div>
+                  <div class="role-tags">
+                    <span class="tag">Java Migration</span>
+                    <span class="tag">Pricing Engines</span>
+                    <span class="tag">Elasticsearch</span>
+                    <span class="tag">PostgreSQL</span>
+                  </div>
+                </div>
+                <ul class="role-bullets">
+                  <li>
+                    Owned the implementation of enterprise discount and promotional pricing engines operating reliably across multi-tenant park environments.
+                  </li>
+                  <li>
+                    Contributed to the multi-phase backend migration from a legacy Node.js/TypeScript stack to modern Java microservices, increasing throughput and type safety.
+                  </li>
+                  <li>
+                    Optimized search and reservation data workflows across Elasticsearch and PostgreSQL to support peak seasonal booking surges.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <!-- PRSM Healthcare Experience Group -->
+          <div class="company-block">
+            <div class="company-header">
+              <div class="company-info">
+                <h3 class="company-name">PRSM Healthcare</h3>
+                <span class="company-badge">Healthcare Operations &bull; Infrastructure</span>
+              </div>
+              <span class="company-tenure">June 2014 &ndash; May 2019</span>
+            </div>
+
+            <div class="roles-timeline">
+              <article class="role-entry">
+                <div class="role-marker" aria-hidden="true"></div>
+                <div class="role-header">
+                  <div class="role-titles">
+                    <h4 class="role-title">Software Engineer</h4>
+                    <span class="role-dates">Jun 2014 &ndash; May 2019</span>
+                  </div>
+                  <div class="role-tags">
+                    <span class="tag">C# ASP.NET</span>
+                    <span class="tag">Fault Tolerance</span>
+                    <span class="tag">Azure &amp; AWS Migration</span>
+                    <span class="tag">VoIP / FreePBX</span>
+                  </div>
+                </div>
+                <ul class="role-bullets">
+                  <li>
+                    Engineered a fault-tolerant system using redundant VPN connections and load balancing to ensure <strong>100% uptime</strong> for mission-critical call center infrastructure.
+                  </li>
+                  <li>
+                    Facilitated a <strong>2x increase in client capacity</strong> by developing scalable web applications and data processing pipelines while maintaining operational stability.
+                  </li>
+                  <li>
+                    Led the end-to-end rewrite of the core B2B business application, migrating legacy PHP to <strong>C# ASP.NET</strong> with improved security and modularity.
+                  </li>
+                  <li>
+                    Orchestrated the migration of business applications from on-premises infrastructure to <strong>Microsoft Azure and subsequently to AWS</strong>, modernizing deployment pipelines.
+                  </li>
+                  <li>
+                    Integrated customer outreach platforms with <strong>FreePBX VoIP infrastructure</strong> to automate calling workflows and improve connection rates.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Projects Section -->
+        <section class="card-section" id="projects">
+          <div class="section-title-wrap">
+            <p class="section-eyebrow">Engineering Work</p>
+            <h2 class="section-title">Technical Projects</h2>
+          </div>
+
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-group">
+                <div class="project-icon-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22">
+                    <path fill="currentColor" d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.38-1 1.72V7h2a5 5 0 0 1 5 5v1.28c.6.34 1 .98 1 1.72a2 2 0 0 1-2 2c-.74 0-1.38-.4-1.72-1H17v1a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3v-1H5.72c-.34.6-.98 1-1.72 1a2 2 0 0 1-2-2c0-.74.4-1.38 1-1.72V12a5 5 0 0 1 5-5h2V5.72A2 2 0 0 1 10 4a2 2 0 0 1 2-2m-3 8a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="project-name">Agentic AI &amp; Local LLM Tooling</h3>
+                  <p class="project-subtitle">Autonomous Workflows, Inference Bridging &amp; Model Context Protocol</p>
+                </div>
+              </div>
+              <div class="role-tags">
+                <span class="tag tag-accent">Model Context Protocol (MCP)</span>
+                <span class="tag">Llama.cpp</span>
+                <span class="tag">Claude Code / OpenCode</span>
+                <span class="tag">Python</span>
+                <span class="tag">Go</span>
+              </div>
+            </div>
+            <ul class="role-bullets">
               <li>
-                Tech Lead for the design and implementation of a complex 'Abandoned Cart' recovery system, orchestrating cross-domain workflows across distributed services to drive revenue recovery.
+                Architected multi-agent coding workflows using local LLM inference engines (<strong>Llama.cpp</strong>) and autonomous agent harnesses (<strong>OpenCode, Claude Code</strong>), overcoming context window constraints to accelerate development velocity and code quality.
               </li>
               <li>
-                Implemented fraud mitigation strategies that eliminated carding attacks, ensuring long-term transaction security and reducing business risk.
+                Engineered custom <strong>Model Context Protocol (MCP) servers</strong> and LLM agents to equip models with real-time runtime inspection and secure external tool calling capabilities.
               </li>
               <li>
-                Mentor junior and mid-level developers through architectural guidance and rigorous code reviews, directly contributing to their promotion to senior levels.
-              </li>
-              <li>
-                Lead the development and maintenance of the customer-facing mobile application using Flutter.
+                Developed lightweight <strong>Python and Go network proxies</strong> and inference microservices, including OpenAI-compatible bridging for local model servers and self-improving agent frameworks.
               </li>
             </ul>
-        </article>
-        <article class="nested">
-          <header>
-            <div>
-              <h4>Campspot · Senior Developer Level 1</h4>
-              <p>Apr 2022 – Mar 2024</p>
-            </div>
-          </header>
-          <ul>
-            <li>
-              Designed and deployed a comprehensive gift card platform adopted by a majority of clients, significantly expanding customer engagement and revenue opportunities.
-            </li>
-            <li>
-              Managed and optimized payment processing systems handling millions of dollars in daily transactions.
-            </li>
-            <li>
-              Built critical in-house Point of Sale (POS) and invoicing systems essential to daily campground operations.
-            </li>
-            <li>
-              Drove UX-centered feature improvements that contributed to a measurable increase in Net Promoter Score (NPS) and improved customer retention.
-            </li>
-          </ul>
-        </article>
-        <article class="nested">
-          <header>
-            <div>
-              <h4>Campspot · Developer Level 2</h4>
-              <p>Jul 2019 – Apr 2022</p>
-            </div>
-          </header>
-          <ul>
-            <li>
-              Owned the implementation of enterprise-level discount and promotional code management systems across multiple concurrent park environments.
-            </li>
-            <li>
-              Contributed to the strategic migration of core features from a legacy Node.js/TypeScript backend to a scalable Java backend.
-            </li>
-            <li>
-              Collaborated on cross-functional feature rollouts, improving overall system functionality and stability.
-            </li>
-          </ul>
-        </article>
-        <article>
-          <header>
-            <div>
-              <h3>
-                PRSM Healthcare · Software Engineer
-                <span class="tag">C# · .NET · Systems Design</span>
-              </h3>
-              <p>Jun 2014 – May 2019</p>
-            </div>
-          </header>
-          <ul>
-            <li>
-              Engineered a fault-tolerant system using redundant VPN connections and load balancing to ensure 100% uptime for critical call center infrastructure.
-            </li>
-            <li>
-              Facilitated a 2x increase in client capacity by developing scalable web and data solutions while maintaining operational stability.
-            </li>
-            <li>
-              Led the complete rewrite of the core B2B business application, migrating the codebase from PHP to C# ASP.NET.
-            </li>
-            <li>
-              Orchestrated the full-scale migration of business applications from on-premises infrastructure to Microsoft Azure and ultimately to AWS.
-            </li>
-            <li>
-              Integrated complex customer outreach software with VoIP technologies based on FreePBX.
-            </li>
-          </ul>
-        </article>
-      </section>
+          </article>
+        </section>
 
-      <section id="skills">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Full-stack toolkit</h2>
-        </div>
-        <div class="skill-grid">
-          <div>
-            <h3>Languages</h3>
-            <p>Java · Kotlin · TypeScript · JavaScript · Go · Python · C# · Dart</p>
+        <!-- Skills Section -->
+        <section class="card-section" id="skills">
+          <div class="section-title-wrap">
+            <p class="section-eyebrow">Expertise</p>
+            <h2 class="section-title">Technical Skills</h2>
           </div>
-          <div>
-            <h3>Frameworks</h3>
+
+          <div class="skills-grid">
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="category-icon" aria-hidden="true">&#123; &#125;</span>
+                <h3>Languages</h3>
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">Kotlin</span>
+                <span class="skill-pill">TypeScript</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">Go</span>
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">C#</span>
+                <span class="skill-pill">Dart</span>
+                <span class="skill-pill">SQL</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="category-icon" aria-hidden="true">&#9881;</span>
+                <h3>Frameworks</h3>
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill">Angular</span>
+                <span class="skill-pill">AngularJS</span>
+                <span class="skill-pill">Flutter</span>
+                <span class="skill-pill">.NET Core</span>
+                <span class="skill-pill">ASP.NET</span>
+                <span class="skill-pill">Quarkus</span>
+                <span class="skill-pill">Dropwizard</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="category-icon" aria-hidden="true">&#9741;</span>
+                <h3>Data &amp; Search</h3>
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill">PostgreSQL</span>
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">SQLite</span>
+                <span class="skill-pill">Elasticsearch</span>
+                <span class="skill-pill">OpenSearch</span>
+                <span class="skill-pill">Redis</span>
+                <span class="skill-pill">Valkey</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="category-icon" aria-hidden="true">&#9729;</span>
+                <h3>DevOps &amp; Infra</h3>
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill">AWS</span>
+                <span class="skill-pill">Docker</span>
+                <span class="skill-pill">Kubernetes (K3s)</span>
+                <span class="skill-pill">ArgoCD</span>
+                <span class="skill-pill">Linux</span>
+                <span class="skill-pill">Prometheus</span>
+                <span class="skill-pill">Grafana</span>
+                <span class="skill-pill">CI/CD</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="category-icon" aria-hidden="true">&#9670;</span>
+                <h3>Core Engineering</h3>
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill">Distributed Systems</span>
+                <span class="skill-pill">Fault-Tolerant Design</span>
+                <span class="skill-pill">REST APIs</span>
+                <span class="skill-pill">TDD</span>
+                <span class="skill-pill">Clean Architecture</span>
+                <span class="skill-pill">Technical Mentorship</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="category-icon" aria-hidden="true">&#10024;</span>
+                <h3>AI &amp; Agentic Systems</h3>
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill">Model Context Protocol (MCP)</span>
+                <span class="skill-pill">LLM Agents</span>
+                <span class="skill-pill">Llama.cpp</span>
+                <span class="skill-pill">Local Inference</span>
+                <span class="skill-pill">Tool Calling</span>
+                <span class="skill-pill">Prompt Engineering</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="card-section" id="education">
+          <div class="section-title-wrap">
+            <p class="section-eyebrow">Academic Background</p>
+            <h2 class="section-title">Education</h2>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-card-body">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-institution">Mansfield University of Pennsylvania</h3>
+                  <p class="edu-degree">B.Sc. in Computer Information Science: Information Systems</p>
+                </div>
+                <span class="edu-date">Graduated 2014</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="interests-banner">
             <p>
-              Angular 2+ · AngularJS · Flutter · .NET Core · ASP.NET · Quarkus · Dropwizard
+              <strong>Interests:</strong> Distributed systems, open-source tooling, technical mentorship, and local agentic AI development.
             </p>
           </div>
-          <div>
-            <h3>Data & Search</h3>
-            <p>
-              PostgreSQL · MySQL · SQLite · Elasticsearch · OpenSearch · Redis ·
-              Valkey
-            </p>
-          </div>
-          <div>
-            <h3>DevOps & Infra</h3>
-            <p>AWS · Docker · Kubernetes (K3s) · ArgoCD · Prometheus · Grafana · Load Balancing</p>
-          </div>
-          <div>
-            <h3>Core Engineering</h3>
-            <p>Fault-Tolerant Design · REST API Design · TDD · Clean/Onion Architecture · Mentorship</p>
-          </div>
-          <div>
-            <h3>AI & ML</h3>
-            <p>Llama.cpp · LLM Agents · MCP · Agentic Coding · Local Model Deployment · Prompt Engineering</p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
-      <section id="education">
-        <div class="section-heading">
-          <p class="eyebrow">Education</p>
-          <h2>Mansfield University of Pennsylvania</h2>
-        </div>
-        <div class="edu-card">
-          <div>
-            <p class="program">B.Sc. Computer Information Science</p>
-            <p>Information Systems focus · Graduated 2014</p>
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-links">
+            <a href="#top">Back to top &uarr;</a>
+            <span class="footer-separator">&bull;</span>
+            <a href="Hollen_Graver_Resume.pdf" download="Hollen_Graver_Resume.pdf">PDF Resume</a>
+            <span class="footer-separator">&bull;</span>
+            <a href="Hollen_Graver_Resume_2026.txt" download="Hollen_Graver_Resume_2026.txt">Text Resume</a>
+            <span class="footer-separator">&bull;</span>
+            <a href="https://linkedin.com/in/hollen-graver-92189941" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span class="footer-separator">&bull;</span>
+            <a href="https://github.com/mrhollen" target="_blank" rel="noreferrer">GitHub</a>
           </div>
+          <p class="footer-copy">&copy; <span id="year">2026</span> Hollen Graver. All rights reserved.</p>
         </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>© <span id="year"></span> Hollen Graver. All rights reserved.</p>
-    </footer>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>

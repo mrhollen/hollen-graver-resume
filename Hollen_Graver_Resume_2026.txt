@@ -1,0 +1,62 @@
+﻿Hollen Graver
+Phone: (814)326-6160 | Email: graverhollen@gmail.com 
+LinkedIn: linkedin.com/in/hollen-graver-92189941 | Website: hollengraver.com | Github: github.com/mrhollen
+________________
+
+
+Summary
+Highly experienced software developer with over a decade of expertise in building impactful software tools across Java/Angular/AWS/C#/TypeScript/Go. Passionate about code quality, AI/machine learning, and building easy-to-maintain and highly scalable software. Seeking a fulfilling career to leverage my skills and contribute to impactful projects.
+________________
+
+
+Campspot
+Senior Software Developer Level 2 | March 2024 – Present
+* Led the development of numerous large features and supported the maintenance of the primary Campspot B2C product (campspot.com), ensuring high-quality user experience, actively mitigating and handling credit card fraud, and supporting tens of thousands of daily users
+* Helped refine usage of AI coding tools and explored implementation of AI-powered Customer Support Chatbots
+* Hired, onboarded, and mentored more junior developers, enhancing team performance and skill growth
+* Developed and maintained Campspot’s customer-facing mobile application 
+* Developed applications using Java, Kotlin, TypeScript in AngularJS, Angular, Flutter/Dart
+* All applications and infrastructure deployed to AWS
+* Utilized PostgreSQL, MySQL, Elasticsearch, OpenSearch, Redis for search and database management to optimize application performance and data handling
+Senior Software Developer Level 1 | April 2022 – March 2024
+* Maintained and developed code processing millions of dollars of payments daily
+* Designed and deployed a new gift card system that was adopted by hundreds of clients, significantly boosting customer engagement and revenue streams
+* Built and maintained invoicing and in-house Point of Sale systems crucial to daily campground operations
+* Developed and integrated new features that significantly improved the user experience, increasing user satisfaction and retention rates
+ Software Developer Level 2 | July 2019 – April 2022
+* Assisted in software development and maintenance including enterprise level discount and promo code management at many parks simultaneously 
+* Migrated features from a legacy Node with TypeScript backend to a Java backend
+* Contributed to feature rollouts, improving functionality
+* Worked with Java, Kotlin, TypeScript, AngularJS, Angular, PostgreSQL, MySQL, Elasticsearch, OpenSearch, Redis, NodeJS, ExpressJS
+PRSM Healthcare
+Software Engineer | June 2014 – May 2019
+* Developed and maintained applications, collaborated with cross-functional teams
+* Integrated key customer outreach software with VoIP technologies based on FreePBX
+* Supported 2x client growth
+* Facilitated complex data delivery to stakeholders
+* Engineered a fault-tolerant system using redundant VPN connections and load balancing to maintain connections to client systems critical to call center staff
+* Worked extensively with C#, .NET, .NET Core, TypeScript, Angular, AngularJS
+* Rewrote the core business application supporting both B2B and internal tooling from PHP to C# ASP.NET
+* Migrated all business applications from on-prem to Microsoft Azure and finally to AWS
+________________
+
+
+Education
+B.Sc. in Computer Information Science: Information Systems 
+Mansfield University of Pennsylvania 
+Graduated: 2014 
+________________
+
+
+Skills
+Technical:
+Languages: Java, Kotlin, JavaScript/TypeScript, Go, Python, C#, Dart
+Frameworks & Libraries: AngularJS, Angular 2+, Flutter, .NET, .NET Core
+Databases & Search: PostgreSQL, MySQL, SQLite, Elasticsearch, OpenSearch, Redis, Valkey
+Infrastructure & DevOps: AWS, Docker, Kubernetes (K3s), ArgoCD, Arch Linux, Prometheus, Grafana, Load Balancing, Message Queues
+AI & Machine Learning: LLMs, Local Model Deployment (Qwen, Llama.cpp), LLM Agents, MCP, Diffusion-Based Image Generators
+Core Engineering: Fault-Tolerant System Design, REST API Development, Software Testing including TDD, Debugging, Code Reviews
+
+
+Soft Skills:
+Communication, Team Collaboration, Pair Programming, Problem-Solving, Mentorship, Adaptability, Attention to Detail, Teaching, Project Management
